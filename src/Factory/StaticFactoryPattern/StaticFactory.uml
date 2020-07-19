@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="342.0" y="86.0">Factory.StaticFactoryPattern.SubClass1</node>
+    <node x="166.0" y="0.0">Factory.StaticFactoryPattern.SuperClass</node>
+    <node x="171.0" y="86.0">Factory.StaticFactoryPattern.SubClass3</node>
+    <node x="226.0" y="167.0">Factory.StaticFactoryPattern.ClientSide</node>
+    <node x="0.0" y="86.0">Factory.StaticFactoryPattern.SubClass2</node>
+    <node x="0.0" y="167.0">Factory.StaticFactoryPattern.ClassFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Factory.StaticFactoryPattern.SubClass2" target="Factory.StaticFactoryPattern.SuperClass">
+      <point x="0.0" y="-18.0" />
+      <point x="75.5" y="61.0" />
+      <point x="192.83333333333334" y="61.0" />
+      <point x="-53.66666666666666" y="18.0" />
+    </edge>
+    <edge source="Factory.StaticFactoryPattern.SubClass3" target="Factory.StaticFactoryPattern.SuperClass">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="Factory.StaticFactoryPattern.SubClass1" target="Factory.StaticFactoryPattern.SuperClass">
+      <point x="0.0" y="-18.0" />
+      <point x="417.5" y="61.0" />
+      <point x="300.16666666666663" y="61.0" />
+      <point x="53.66666666666663" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="528.0" y="78.0" />
+  <SelectedNodes>
+    <node>Factory.StaticFactoryPattern.SubClass1</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

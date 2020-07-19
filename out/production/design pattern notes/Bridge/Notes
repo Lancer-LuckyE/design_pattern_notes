@@ -1,0 +1,3 @@
+- It decouples an abstraction from its implementation, and two can vary independently
+- Provides bridge structure between implementation class and abstraction class
+- Brand interface acts as a bridge

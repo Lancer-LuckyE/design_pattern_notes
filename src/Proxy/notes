@@ -1,0 +1,10 @@
+- 静态代理
+    -- 在代理中扩展了被代理对象的功能。无需对被代理对象进行修改。
+    -- 可能会有很多代理类
+    -- 但是如果对接口进行修改，则代理和被代理都要维护。违背o/c，和接口隔离
+
+- 动态代理
+    -- 用反射机制在程序运行时，动态获取代理的对象的class。
+    -- 用 Proxy.newProxyInstance(classLoader, interface, invocationHandler)
+    -- invocationHandler 是个匿名内部类, 要重写的是invoke的方法。invoke(obj, method, args)是代理方法,StaticProxy 里的TeacherDTOProxy.teach()
+    -- Obj 是代理的对象： TeacherDTO；method 是调用的方法名：teach； args 是代理对象方法的参数。

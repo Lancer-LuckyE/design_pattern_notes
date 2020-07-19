@@ -1,0 +1,10 @@
+- 迭代器模式可以让数据的结构在不被暴露的前提下，提供一个统一的接口用于遍历访问数据结构中的元素
+  get a way to access the elements of a collection object in sequential manner without any need to know its underlying representation.
+- 类中实现一个createIterator的方法，用于创建一个iterator，在客户端中用iterator来遍历数据
+-- iterator:是一个迭代器接口
+   aggregate (IFaculty)：是一个统一的聚合接口，将客户端和具体的聚合解耦 --！
+   concreteIterator (EngIterator): 是一个迭代器的类，用于管理迭代。在要迭代的类里通过写私有的内部类来实现，不要分出来写。--！
+   concreteAggregate (FacultyOfEngineering)：具体的聚合对象。提供一个方法并返回一个迭代器。这个返回的迭代器就已经知道了要如何去遍历这个集合了 --！
+   client： 通过iterator 和 aggregate 来依赖他们的子类
+
+

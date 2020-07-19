@@ -1,0 +1,3 @@
+- It hides the complexities of subsystems from the client side.
+- Facade pattern works as a buffer layer between client and subsystems.
+- Facade manages subsystems business logic and decouples client from subsystems.

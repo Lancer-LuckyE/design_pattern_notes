@@ -1,0 +1,2 @@
+- One to many relationship between objs
+- When the one obj is modified, its dependent objs are notified automatically

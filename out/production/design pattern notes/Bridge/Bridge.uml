@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Bridge.CellPhone</OriginalElement>
+  <nodes>
+    <node x="39.081426404084965" y="349.95318939326444">Bridge.WithHomeBtn</node>
+    <node x="395.0517572567023" y="294.87964987894964">Bridge.Apple</node>
+    <node x="263.06747017042994" y="401.93159316336494">Bridge.Brand</node>
+    <node x="0.0" y="134.9361769101161">Bridge.CellPhone</node>
+    <node x="393.03083784665705" y="119.79278799882101">Bridge.Client</node>
+    <node x="167.57734715181704" y="0.0">Bridge.FullSizeScreen</node>
+    <node x="320.6191974955459" y="663.9710530037677">Bridge.Samsung</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Bridge.Apple" target="Bridge.Brand">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Bridge.Samsung" target="Bridge.Brand">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Bridge.FullSizeScreen" target="Bridge.CellPhone">
+      <point x="-8.71324342250475" y="0.0" />
+      <point x="-8.713243422504746" y="0.0" />
+    </edge>
+    <edge source="Bridge.WithHomeBtn" target="Bridge.CellPhone">
+      <point x="5.128611206580388" y="0.0" />
+      <point x="5.128611206580359" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Circular" zoom="1.0" x="257.5" y="350.0" />
+  <SelectedNodes>
+    <node>Bridge.CellPhone</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

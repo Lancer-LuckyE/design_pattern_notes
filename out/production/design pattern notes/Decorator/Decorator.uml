@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Decorator.Amaricano</OriginalElement>
+  <nodes>
+    <node x="243.22916666666669" y="0.0">Decorator.Drink</node>
+    <node x="252.0" y="172.0">Decorator.Amaricano</node>
+    <node x="38.0" y="86.0">Decorator.Decorator</node>
+    <node x="0.0" y="172.0">Decorator.Milk</node>
+    <node x="423.0" y="172.0">Decorator.Espresso</node>
+    <node x="0.0" y="253.0">Decorator.Client</node>
+    <node x="584.0" y="172.0">Decorator.Cappuccino</node>
+    <node x="121.0" y="172.0">Decorator.Cream</node>
+    <node x="433.0" y="86.0">Decorator.Coffee</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Decorator.Milk" target="Decorator.Decorator">
+      <point x="0.0" y="-18.0" />
+      <point x="50.5" y="147.0" />
+      <point x="75.75" y="147.0" />
+      <point x="-37.75" y="18.0" />
+    </edge>
+    <edge source="Decorator.Espresso" target="Decorator.Coffee">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="Decorator.Amaricano" target="Decorator.Coffee">
+      <point x="0.0" y="-18.0" />
+      <point x="327.5" y="147.0" />
+      <point x="453.1666666666667" y="147.0" />
+      <point x="-40.333333333333314" y="18.0" />
+    </edge>
+    <edge source="Decorator.Decorator" target="Decorator.Drink">
+      <point x="0.0" y="-18.0" />
+      <point x="113.5" y="61.0" />
+      <point x="270.9791666666667" y="61.0" />
+      <point x="-27.75" y="18.0" />
+    </edge>
+    <edge source="Decorator.Coffee" target="Decorator.Drink">
+      <point x="0.0" y="-18.0" />
+      <point x="493.5" y="61.0" />
+      <point x="326.4791666666667" y="61.0" />
+      <point x="27.75" y="18.0" />
+    </edge>
+    <edge source="Decorator.Cappuccino" target="Decorator.Coffee">
+      <point x="0.0" y="-18.0" />
+      <point x="664.5" y="147.0" />
+      <point x="533.8333333333334" y="147.0" />
+      <point x="40.33333333333337" y="18.0" />
+    </edge>
+    <edge source="Decorator.Cream" target="Decorator.Decorator">
+      <point x="0.0" y="-18.0" />
+      <point x="176.5" y="147.0" />
+      <point x="151.25" y="147.0" />
+      <point x="37.75" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="894.5" y="315.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

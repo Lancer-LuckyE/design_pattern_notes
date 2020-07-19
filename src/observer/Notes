@@ -1,0 +1,5 @@
+- One to many relationship between objs
+- When the one obj is modified, its dependent objs are notified automatically
+- Observer is the subscriber or follower who will be notified when obj is modified (Observer is an interface, and some concrete observer classes implement it).
+- Subject is the news class who acts as the one obj. (Subject can either be a concrete class or a abstract class / interface. Some concrete classes implement or inherent it)
+- Subject class maintains a list of observers (add, remove, notifyAll, notifyOne ...) as well as holds information / data of which is sending to observers.

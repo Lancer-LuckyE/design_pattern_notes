@@ -1,0 +1,29 @@
+Singleton design pattern ensures there's only one instance in the system during runtime.
+This type of class only provide one public getter method to get the object instance.
+
+Different approaches:
+
+1) eager init
+Java.lang.Runtime 用的就是eager init。推荐使用
+
+2) static block init
+在类加载的时候创建实例，假如类没有被依赖（引用）的话就会造成内存的浪费（懒加载 lazy loading）。
+
+3) lazy init
+实现懒加载，但是线程不安全
+
+4) thread safe singleton
+实现懒加载，线程安全，但是效率太低。每条线程在get instance的时候都要同步，导致extra overhead。
+双重锁可以避免extra overhead.
+
+5) Bill Pugh Singleton Implementation
+静态内部类可以实现懒加载，线程安全
+在外部类在装载的时候，静态内部类是不会被装载的。
+在外部类依赖内部类的时候再装载，且在类装载的时候线程是安全的。推荐使用
+
+6) Using Reflection to destroy Singleton Pattern
+
+7) Enum Singleton
+避免多线程，防止反序列化重新创建的对象，推荐使用。
+
+8) Serialization and Singleton

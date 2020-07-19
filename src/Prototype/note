@@ -1,0 +1,26 @@
+-Prototype design pattern is used when the Object creation is a costly affair and requires a lot of time and resources and you have a similar object already existing.
+-Prototype pattern provides a mechanism to copy the original object to a new object and then modify it according to our needs. Prototype design pattern uses java cloning to copy the object.
+-The mechanism is implemented by a class with providing a clone method.
+
+-Shallow copy:
+--For the primitive data types, it copies their values and assign to the new variables.
+--For the reference data types such as a object in member variables, the shallow copy only assign a reference to the new variables.
+--The objects are point to the same memory address.
+//    第一种是重写clone方法。
+//    1. 先用 super.clone 来实现primitive datatypes 的拷贝。
+//    2. 然后克隆引用类型，在引用类型的类里也要事先实现 clone方法。
+//    引用类型多的时候不太好，每一个都要单独处理clone
+
+-Deep copy:
+--It copies the objects and assigns them with a new memory address. They have a same value but not exactly the same objects.
+--It can be done by overriding the clone method, or by serializing and deserializing the object.
+//    第二种是用对对象的序列化来实现的。推荐使用
+//    相当于是将this 实例以对象流的方式写到内存里，再用对象输入流从内存里读回来。
+//    在读的时候会自动拷贝一份
+//    注意要关闭流！！！
+//    关闭流之前要检车流是否为空 可以写一个private关闭流 方法，可以将每个由下至上流分开关闭。这样try catch 的结果就可以分开显示了。
+//    Java 7 之后加入了try-with-resources 语句， 可以在让流在用完以后自动关闭。
+
+原型模式有个缺点：对于原本不支持克隆的类，没办法在不修改代码的基础上实现，必须修改原来的类。
+违反了o/c原则
+

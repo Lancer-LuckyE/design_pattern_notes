@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Proxy.StaticProxy</OriginalElement>
+  <nodes>
+    <node x="0.0" y="86.0">Proxy.StaticProxy.TeacherDAOProxy</node>
+    <node x="231.0" y="86.0">Proxy.StaticProxy.TeacherDAO</node>
+    <node x="148.91666666666669" y="172.0">Proxy.StaticProxy.Client</node>
+    <node x="70.85416666666669" y="0.0">Proxy.StaticProxy.ITeacherDAO</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Proxy.StaticProxy.Client" target="Proxy.StaticProxy.TeacherDAOProxy">
+      <point x="-45.37500000000003" y="-18.0" />
+      <point x="164.04166666666669" y="152.0" />
+      <point x="52.75" y="152.0" />
+      <point x="-52.75" y="18.0" />
+    </edge>
+    <edge source="Proxy.StaticProxy.TeacherDAO" target="Proxy.StaticProxy.ITeacherDAO">
+      <point x="0.0" y="-18.0" />
+      <point x="311.5" y="61.0" />
+      <point x="220.47916666666669" y="61.0" />
+      <point x="64.125" y="18.0" />
+    </edge>
+    <edge source="Proxy.StaticProxy.TeacherDAOProxy" target="Proxy.StaticProxy.ITeacherDAO">
+      <point x="1.4210854715202004E-14" y="-18.0" />
+      <point x="105.50000000000001" y="61.0" />
+      <point x="134.97916666666669" y="61.0" />
+      <point x="-21.375" y="18.0" />
+    </edge>
+    <edge source="Proxy.StaticProxy.Client" target="Proxy.StaticProxy.TeacherDAO">
+      <point x="15.124999999999972" y="-18.0" />
+      <point x="224.54166666666669" y="142.0" />
+      <point x="271.25" y="142.0" />
+      <point x="-40.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="196.0" y="104.0" />
+  <SelectedNodes>
+    <node>Proxy.StaticProxy.TeacherDAOProxy</node>
+    <node>Proxy.StaticProxy.TeacherDAO</node>
+    <node>Proxy.StaticProxy.Client</node>
+    <node>Proxy.StaticProxy.ITeacherDAO</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

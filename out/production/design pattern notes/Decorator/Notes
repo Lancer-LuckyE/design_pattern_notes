@@ -1,0 +1,3 @@
+1. 动态将新功能加载到对象，符合OCP
+2. 在类与类的组合的情景下，可以增强各种类的扩展性
+3. https://sourcemaking.com/design_patterns/decorator

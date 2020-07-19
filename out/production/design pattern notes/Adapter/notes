@@ -1,0 +1,15 @@
+- ClassAdapter
+    - voltage adapter has to inherent from voltage 220V. voltage 5V has to be interface. lead to limitation.
+    - voltage220V 的方法在voltage Adapter中会暴露出来
+    - 继承流了voltage220V 可以在adapter里重写 （违反了 liskov substitution）
+
+- ObjectAdapter
+    - 让voltage adapter 持有voltage220V的实例对象 来代替 继承。--> 就是让 220V 聚合/组合进adapter里。
+
+- InterfaceAdapter
+    - 先做一个抽象的适配器，并用默认空方法实现所有的接口（5V/转接出去的）方法。
+    - 在客户端里通过匿名内部类的方式来重写空实现。
+    - 实现了接口分离原则。
+
+- SpringMVC 中，handlerAdapter用的就是adapter 模式。
+    - SpringMVC 中的客户端其实是服务器，而被适配的对象是前端发来的请求。

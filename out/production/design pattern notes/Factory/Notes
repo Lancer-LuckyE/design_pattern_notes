@@ -1,0 +1,8 @@
+The factory design pattern is used when we have a superclass with multiple sub-classes and based on input, we need to return one of the sub-class.
+Takes out the responsibility of instantiation from the client side.
+
+Java.util.Calender uses the factory design patter(getInstance()).
+
+在抽象工厂模式中，当后端扩展factory2负责生产的类时，使用factory1的客户端不受影像。
+对不同的工厂进行解耦，或者说让不同工厂实现单一职责。
+

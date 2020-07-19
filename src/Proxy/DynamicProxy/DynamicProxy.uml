@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Proxy.DynamicProxy</OriginalElement>
+  <nodes>
+    <node x="5.0" y="86.0">Proxy.DynamicProxy.TeacherDAO</node>
+    <node x="0.0" y="248.0">Proxy.DynamicProxy.Client</node>
+    <node x="0.0" y="0.0">Proxy.DynamicProxy.ITeacherDAO</node>
+    <node x="0.0" y="167.0">Proxy.DynamicProxy.ProxyFactroy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Proxy.DynamicProxy.TeacherDAO" target="Proxy.DynamicProxy.ITeacherDAO">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="90.5" y="142.0" />
+  <SelectedNodes>
+    <node>Proxy.DynamicProxy.ITeacherDAO</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
